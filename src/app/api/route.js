@@ -5,7 +5,7 @@ const client = new Client(process.env.OCTOAI_TOKEN);
 
 export const POST = async ( req ) =>{
    const body = await req.json()
-   console.log("body:", body)
+   //console.log("body:", body)
 
    const completion = await client.chat.completions.
    create({
